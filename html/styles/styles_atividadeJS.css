@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; 
+    color: #333;}
+
+/* Neste header eu chamei meu botão e meu h2 inserindo display flex, para organizar os elementos */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #6a0dad;
+    
+}
+
+.Botao_link{
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 50px;
+    border-color: #3f0946;
+    width: 100px;
+    /* margin-top: 20px; */
+    margin-left: 20px;
+    padding: 10px;
+    color: #131313;
+    
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+button a{
+    color: #000000;
+    text-decoration: none;
+}
+.Titulo{
+    /* display: flex; */
+    flex-grow: 1; /* Permitir que o título ocupe o espaço restante */
+    text-align: center;
+}
+
+header a{
+ color: #000000;
+}
+
+header a:hover{
+    color: aqua;
+}
+
+.Titulo h2{
+    color: #ffff;
+    text-align: center;
+    padding-top: 0px;
+    padding-right: 95px;
+}
+
+.Container_atividades {
+    background-color: #e7d7ff; 
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.Conatiner h2 {
+    color: #9b59b6; 
+    margin-bottom: 20px;
+}
+
+.Atividades-container {
+    display: inline-block;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Atividade {
+    background-color: #ffffff; 
+    border-radius: 10px;
+    margin: 50px;
+    padding: 20px;
+    width: 700px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.skill:hover {
+    transform: scale(1.05); /* Efeito de hover */
+}
+
+.skill-icon {
+    width: 50px; 
+    height: 50px; 
+    margin-bottom: 10px;
+}
+
+.Atividade h3 {
+    color: #8e44ad; /* Cor roxa escura do meu h3 */
+    margin: 10px 0;
+}
+
+.Atividade p {
+    color: #333; /* Cor do texto  */
+}
+
+.botao{
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 50px;
+    border-color: #3f0946;
+    width: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    color: #131313;
+    
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+.botao:hover{
+    background-color: rgb(199, 78, 255);
+    color: white;
+    transform: scale(1.2)
+}

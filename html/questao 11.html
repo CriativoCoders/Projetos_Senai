@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagem-icon/JS-icon.png" type="image/x-icon">
+    <title>questão 11</title>
+</head>
+<body>
+    <script>
+    // Função para obter a escolha do computador
+    function escolherComputador() {
+        const opcoes = ["pedra", "papel", "tesoura"];
+        const indice = Math.floor(Math.random() * opcoes.length);
+        return opcoes[indice];
+    }
+
+    function determinarVencedor(usuario, computador) {
+        if (usuario === computador) {
+            return "Empate!";
+        } else if (
+            (usuario === "pedra" && computador === "tesoura") ||
+            (usuario === "papel" && computador === "pedra") ||
+            (usuario === "tesoura" && computador === "papel")
+        ) {
+            return "Você ganhou!";
+        } else {
+            return "O computador ganhou!";
+        }
+    }
+
+    let escolhaUsuario = prompt("Escolha: pedra, papel ou tesoura?").toLowerCase();
+
+    if (["pedra", "papel", "tesoura"].includes(escolhaUsuario)) {
+        let escolhaComputador = escolherComputador();
+        alert("O computador escolheu: " + escolhaComputador);
+
+        let resultado = determinarVencedor(escolhaUsuario, escolhaComputador);
+        alert(resultado);
+    } else {
+        alert("Escolha inválida! Por favor, escolha pedra, papel ou tesoura.");
+    }
+    </script>
+    
+</body>
+</html>

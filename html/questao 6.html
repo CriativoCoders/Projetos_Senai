@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagem-icon/JS-icon.png" type="image/x-icon">
+    <title>questão 6</title>
+</head>
+<body>
+    <script>
+        // Função para verificar notas
+function verificarNotas() {
+    let nota1 = parseFloat(prompt("Digite a primeira nota:"));
+        let nota2 = parseFloat(prompt("Digite a segunda nota:"));
+
+    let media = (nota1 + nota2) / 2;
+
+    let resultadoMedia = media > 7 ? "acima da média" : "abaixo da média";
+
+    let resultadoNota1 = nota1 % 2 === 0 ? "A primeira nota é par." : "A primeira nota é ímpar.";
+    let resultadoNota2 = nota2 % 2 === 0 ? "A segunda nota é par." : "A segunda nota é ímpar.";
+
+    alert("A média das notas é: " + media.toFixed(2) + ". Está " + resultadoMedia + ".\n" + resultadoNota1 + "\n" + resultadoNota2);
+}
+
+verificarNotas();
+
+    </script>
+</body>
+</html>

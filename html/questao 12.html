@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagem-icon/JS-icon.png" type="image/x-icon">
+    <title>questão 12</title>
+</head>
+<body>
+    <script>
+    function calcularFatorial(numero) {
+        if (numero < 0) {
+            return "Fatorial não definido para números negativos.";
+        }
+        let fatorial = 1;
+        for (let i = 1; i <= numero; i++) {
+            fatorial *= i;
+        }
+        return fatorial;
+    }
+
+    let numero = parseInt(prompt("Digite um número para calcular o fatorial:"));
+
+    if (isNaN(numero)) {
+        alert("Por favor, insira um número válido.");
+    } else {
+        let resultado = calcularFatorial(numero);
+        alert("O fatorial de " + numero + " é: " + resultado);
+    }
+    </script>
+    
+</body>
+</html>

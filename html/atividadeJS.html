@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles_atividadeJS.css">
+    <link rel="icon" href="imagem-icon/JS-icon.png" type="image/x-icon">
+    <title>Atividades JavaScript</title>
+</head>
+<body>
+    <!-- Aqui tenho o botão onde eu acesso a pagina inicial -->
+    <header>
+        <button class="Botao_link" id="VoltarBotao">
+            <a href="index.html">Voltar</a>
+        </button>
+        <div class="Titulo">
+            <h2>Atividades JavaScript</h2>
+        </div>
+    </header>
+
+
+    <section class="Container_atividades">
+        <h2>Atividades</h2>
+        <div class="Atividades-container">
+            <div class="Atividade">
+                <img src="imagem-icon/JS-icon.png" alt="JavaScript" class="skill-icon">
+                <h3>Questão 1</h3>
+                <p>Difirença entre 2 numeros </p>
+                <a href="questao1.html"><button class="botao">Ver</button></a>
+            </div>
+            <div class="Atividade">
+                <img src="imagem-icon/JS-icon.png" alt="icone-figma" class="skill-icon">
+                <h3>Questão 2</h3>
+                <p>Verificar se número e par</p>
+                <a href="questao2.html"><button class="botao">Ver</button></a>
+            </div>
+        
+            <div class="Atividade">
+                <img src="imagem-icon/JS-icon.png" alt="icone-JS" class="skill-icon">
+                <h3>questão 3</h3>
+                <p>Solicite 2 notas, e veja se o 1 é múltiplo do segundo. (ex. 9 é múltiplo de 3)</p>
+                <a href="questao 3.html"><button class="botao">Ver</button></a>
+            </div>
+
+            <div class="Atividade">
+                <img src="imagem-icon/JS-icon.png" alt="icone-JS" class="skill-icon">
+                <h3>questão 4</h3>
+                <p>Converter Celsius para Fahrenheit</p>
+                <a href="questao4.html"><button class="botao">Ver</button></a>
+            </div>
+
+            <div class="Atividade">
+                <img src="imagem-icon/JS-icon.png" alt="icone-JS" class="skill-icon">
+                <h3>questão 5</h3>
+                <p>Calcule a área (base * altura).</p>
+                <a href="questao 5.html"><button class="botao">Ver</button></a>
+            </div>
+
+            <div class="Atividade">
+                <img src="imagem-icon/JS-icon.png" alt="icone-JS" class="skill-icon">
+                <h3>questão 6</h3>
+                <p>Solicite duas notas ao usuário e informe se está acima da média, e se é uma nota par, e mostre o resultado ao usuário.
+                </p>
+                <a href="questao 6.html"><button class="botao">Ver</button></a>
+            </div>
+
+            <div class="Atividade">
+                <img src="imagem-icon/JS-icon.png" alt="icone-JS" class="skill-icon">
+                <h3>questão 7</h3>
+                <p>Solicita o peso e a altura de uma pessoa e calcular o IMC</p>
+                <a href="questao 7.html"><button class="botao">Ver</button></a>
+            </div>
+
+            <div class="Atividade">
+                <img src="imagem-icon/JS-icon.png" alt="icone-JS" class="skill-icon">
+                <h3>questão 8</h3>
+                <p>Verificar se um ano é bissexto</p>
+                <a href="questao 8.html"><button class="botao">Ver</button></a>
+            </div>
+
+            <div class="Atividade">
+                <img src="imagem-icon/JS-icon.png" alt="icone-JS" class="skill-icon">
+                <h3>questão 9</h3>
+                <p>Solicite ao usuário uma taxa de câmbio, e um valor desejado, exiba quanto ficaria esse valor convertido com a taxa. </p>
+                <a href="questao 9.html"><button class="botao">Ver</button></a>
+            </div>
+            
+            <div class="Atividade">
+                <img src="imagem-icon/JS-icon.png" alt="icone-JS" class="skill-icon">
+                <h3>questão 10</h3>
+                <p>Pedir um número ao usuário de 1 a 9, e imprima a tabuada desse valor</p>
+                <a href="questao 10.html"><button class="botao">Ver</button></a>
+            </div>
+
+            <div class="Atividade">
+                <img src="imagem-icon/funçãoJS_img.jpg" alt="icone-JS" class="skill-icon">
+                <h3>questão 11</h3>
+                <p>Simulação de jogo pedra papel tesoura</p>
+                <a href="questao 11.html"><button class="botao">Ver</button></a>
+            </div>
+
+            <div class="Atividade">
+                <img src="imagem-icon/JS-icon.png" alt="icone-JS" class="skill-icon">
+                <h3>questão 12</h3>
+                <p>Calcular fatorial de um número</p>
+                <a href="questao 12.html"><button class="botao">Ver</button></a>
+            </div>
+
+            <div class="Atividade">
+                <a href="https://coderpad.io/blog/development/what-you-never-learned-about-javascript-functions/">
+                    <img src="imagem-icon/internet-icon.png" alt="icone-JS" class="skill-icon">
+                </a>
+                <h3>Fonte de Estudos</h3>
+                <p>Link de pesquisas para aprofundamento de conteúdo JavaScript</p>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions"><button class="botao">Ver</button></a>
+                <a href="https://blog.matheuscastiglioni.com.br/definindo-funcoes-em-javascript/">
+                    <div style="text-align: center; margin-top: 10px;">Saber mais</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById("VoltarBotao").onclick = function() {
+            var resposta = confirm("voce deseja voltar para pagina inicial? ")
+
+            if (resposta) {
+                window.history.back();
+            } else {
+                alert("voce saiu da página atual")
+            }
+        };
+        
+        
+    </script>
+    
+</body>
+</html>
